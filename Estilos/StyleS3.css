@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* -----Estilos para el Index S3-1----- */
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+/* -----Info Superior----- */
+.infoup {
+    display: flex;
+    width: 100vw;
+    gap: 3em;
+    background-color: rgb(45, 84, 212);
+    color: white;
+    padding-left: 8px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+/* -----Barra de Navegación----- */
+
+#menuDesk {
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: nowrap;
+    gap: 4em;
+    align-items: center;
+    
+}
+
+.navbar {
+    width: 100vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: dimgray;
+    padding: 0 10px;
+}
+
+.navbar:hover {
+    color: rgb(45, 84, 212);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: dimgray;
+}
+
+.icononavbar img {
+    width: 175px;
+    padding: 0 4px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.btnsubmit {
+    width: 200px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    background-color: orangered;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+/* -----Header y Buscador----- */
+
+.bgimage {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.textimage {
+    display: block;
+    position: absolute;
+    color: white;
+    bottom: 170px;
+    left: 100px;
+    padding: 5px;
+    width: 100%;
+}
+
+.textimage p {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    border-radius: 8px;
+    width: 80%;
+    padding: 20px 10px;
+    background-color: white;
+    color: rgb(104, 104, 104);
+    /* align-items: end; */
+
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(211, 211, 211);
+    border-radius: 4px;
+    width: 18%;
+    padding: 10px 10px 10px 10px;
+}
+
+select {
+    border: none;
+    background-color: rgb(211, 211, 211);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+
+.input {
+    border: none;
+    background-color: rgb(211, 211, 211);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    border-radius: 4px;
+    width: 35%;
+    padding: 8px 0px 10px 10px;
+}
+
+input {
+    border: none;
+    background-color: rgb(211, 211, 211);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    width: 90%;
+    height: 40px;
+}
+
+.btnfind {
+    border: none;
+    background-color: rgb(45, 84, 212);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 4px;
+    width: 100%;
+    padding: 21px 40px;
+    cursor: pointer;
+}
+
+/* -----Texto de en-medio----- */
+
+.middletext {
+    margin: 0;
+}
+
+.middletext h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 12px;
+    padding-top: 3%;
+    margin-top: 0;
+}
+
+.middletext h1 {
+    text-align: center;
+    font-weight: 100;
+    padding-bottom: 3%;
+    margin-bottom: 0;
+}
+
+/* -----Estilos de Tarjetas----- */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+}
+
+.cardsproperties {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    margin: .5em;
+    padding: .3em;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.imgup {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cardsup {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.btnhouse {
+    color: white;
+    background-color: rgb(45, 84, 212);
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btnforsale {
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+    cursor: pointer;
+    width: auto;
+}
+
+.btns {
+    position: absolute;
+    top: 8%;
+    left: 6%;
+}
+
+.btnfavorite {
+    position: absolute;
+    top: 8%;
+    right: 6%;
+    color: white;
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+    width: auto;
+    cursor: pointer;
+}
+
+.priceproperties {
+    position: absolute;
+    bottom: 2%;
+    left: 6%;
+    color: rgb(45, 84, 212);
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 2px;
+    padding: 8px;
+    width: auto;
+}
+
+.cardsdown {
+    width: 100%;
+}
+
+.imglocation {
+    margin-left: 20px;
+    color: dimgray;
+}
+
+.location {
+    margin: 0 1%;
+    font-size: 110%;
+}
+
+.hellenmattis {
+    display: flex;
+    justify-content: space-between;
+    color: dimgray;
+}
+
+hr {
+    color: dimgray;
+}
+
+.iconsarea {
+    display: flex;
+    justify-content: space-between;
+    color: dimgray;
+    align-items: center;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.btnallproperties {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.btndivap {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+/* -----Estilos para el Index S3-2----- */
+
+.hotdealcard {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color: rgb(41, 41, 41);
+    gap: 2%;
+    margin: auto;
+}
+
+.imghotdeal {
+    position: relative;
+}
+
+.imghotdeal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.photosbtn {
+    position: absolute;
+    bottom: 3%;
+    left: 6%;
+    color: rgb(45, 84, 212);
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 2px;
+    padding: 8px;
+    width: auto;
+}
+
+.infohotdeal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 3%;
+    width: 64%;
+}
+
+.btnprice {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 30px;
+    width: auto;
+    margin: 3% 0;
+}
+
+.description {
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.iconsareahotdeal {
+    width: 70%;
+    display: flex;
+    color: dimgray;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* -----Estilos para el Resto de la Página Web----- */
+
+.imgproperties img {
+    width: 75%;
+}
+
+.imgproperties {
+    text-align: center;
+}
+
+.imgouragents img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.imgouragents {
+    width: 75%;
+    display: flex;
+    gap: .6em;
+    margin: auto;
+}
+
+.sellproperty img {
+    width: 100%;
+}
+
+.realestate img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.realestate {
+    width: 75%;
+    display: flex;
+    gap: .6em;
+    margin: auto;
+}
+
+.articlesandtips img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.articlesandtips {
+    width: 75%;
+    display: flex;
+    gap: .6em;
+    margin: auto;
+}
+
+.ourvalues img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.ourvalues {
+    width: 75%;
+    display: flex;
+    gap: .6em;
+    margin: auto;
+    align-items: center;
+}
+
+.testimonials img {
+    width: 100%;
+}
+
+.testimonials {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.footer img {
+    width: 100%;
+}
+
+#menuCel {
+    display: none;
+}
+
+/* -------- Media Querys --------- */
+
+@media screen and (max-width: 1024px) {
+   
+    #menuDesk {
+        width: 100vw;
+        display: flex;
+        flex-direction: wrap;
+        flex-wrap: nowrap;
+        gap: 1em;
+        align-items: center;
+        
+    }
+
+    .navbar {
+        width: 100vw;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .icononavbar img {
+        width: 140px;
+    }
+
+    section {
+        width: 75%;
+        gap: .2em;
+        font-size: 12px;
+    }
+
+    .input {
+        width: 35%;
+        padding: .7% 0;
+    }
+
+    input {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .btnfind {
+        width: 100%;
+        padding: 18px 20px;
+        font-size: 12px;
+    }
+    
+}
+
+
+@media screen and (max-width: 400px) {
+
+    /* -----Info Superior----- */
+    .infoup {
+        gap: 1em;
+        font-size: 8px;
+        justify-content: center;
+    }
+
+    /* -----Barra de Navegación----- */
+ 
+    #menuDesk {
+        display: none;
+    }
+
+    .icononavbar img{
+        width: 120px;
+        padding-left: 25px;
+    }
+
+    /* Menú Hamburguesa */
+    
+    #burger {
+        min-width: 20px;
+        min-height: 15px;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+
+    #burger span {
+        border-radius: 5px;
+        background-color: rgb(45, 84, 212);
+        width: 100%;
+        height: 2px;
+        transition: all 300ms ease-out;
+    }
+
+    /* Menú Desplegable */
+
+    #menuCel {
+        display: flex;
+        width: auto;
+        padding: .5%;
+    }
+
+    #menuCel div:nth-child(2){
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+        width: 50vw;
+        height: 0;
+        position: fixed;
+        top: 6.7%;
+        transition: all 250ms ease-out;
+        z-index: 3;
+        justify-content: space-around;
+    }
+
+    #menuCel div.open:nth-child(2){
+        height: 60vh;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        font-size: 12px;
+        padding: .4em;
+    }
+
+    .btnsubmit {
+        width: 160px;
+        margin-top: 15%;
+        padding: 20px 0;
+        border-radius: 5px;
+    }
+
+    /* -----Header y Buscador----- */
+
+    .textimage {
+        top: 6%;
+        left: 10%;
+    }
+
+    .textimage p {
+        font-size: 12px;
+    }
+
+    .textimage h1 {
+        font-size: 25px;
+    }
+
+    section {
+        justify-content: space-between;
+        align-items: flex-end;
+        border-radius: 4px;
+        width: 75%;
+        padding: 5px 7px;
+        gap: .2em;
+        font-size: 8px;
+    }
+
+    .search {
+        width: 18%;
+    }
+
+    select {
+        font-size: 6px;
+    }
+
+    .input {
+        width: 35%;
+        padding: 0;
+    }
+
+    input {
+        font-size: 8px;
+        width: 90%;
+    }
+
+    .btnfind {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 8px;
+    }
+
+    /* -----Texto de en-medio----- */
+
+
+    .middletext h4 {
+        font-size: 12px;
+        padding-top: 6%;
+    }
+
+    .middletext h1 {
+        font-size: 25px;
+        padding-bottom: 2%;
+    }
+
+
+    /* -----Estilos de Tarjetas----- */
+
+    .cardsproperties {
+        width: 85%;
+    }
+
+    .priceproperties {
+        bottom: 1%;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* -----Estilos para el Index S3-2----- */
+
+    .hotdealcard {
+        flex-direction: column;
+    }
+
+    .infohotdeal {
+        width: 80%;
+        margin: auto;
+    }
+
+    .iconsareahotdeal {
+        width: 100%;
+    }
+
+
+    .imgouragents {
+        width: 65%;
+        flex-direction: column;
+    }
+
+
+    .realestate {
+        width: 65%;
+        flex-direction: column;
+    }
+
+    .articlesandtips {
+        width: 65%;
+        flex-direction: column;
+    }
+
+    .ourvalues {
+        width: 65%;
+        flex-direction: column;
+    }
+
+}
